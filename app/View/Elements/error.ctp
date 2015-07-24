@@ -1,0 +1,1 @@
+<div class="alert alert-danger"><strong>Problème !</strong> <?= $message; ?></div>

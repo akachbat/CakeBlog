@@ -1,0 +1,25 @@
+{
+    "name": "maurymmarques/markdown-plugin",
+    "description": "A CakePHP plugin that facilitates the use of PHP Markdown with CakePHP",
+    "type": "cakephp-plugin",
+    "keywords": ["cakephp", "markdown", "plugin"],
+    "homepage": "https://github.com/maurymmarques/markdown-cakephp",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maury M. Marques",
+            "role": "Author"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/maurymmarques/markdown-cakephp/issues",
+        "source": "https://github.com/maurymmarques/markdown-cakephp"
+    },
+    "require": {
+        "php": ">=5.3.0",
+        "composer/installers": "*"
+    },
+    "extra": {
+        "installer-name": "Markdown"
+    }
+}
