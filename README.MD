@@ -6,7 +6,7 @@
 * Regroupement des articles dans des catégories.
 * Chercher un article.
 * Tagger les articles.
-* Public un commentaire.
+* Publier un commentaire.
 * Modérer les commentaires.
 * Authentification des utilisateurs.
 * Intégration du système de cache pour les widgets.
