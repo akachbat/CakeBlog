@@ -1,0 +1,480 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-07-28 15:34+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Controller/CategoriesController.php:22
+msgid "Catégorie n'existe pas !"
+msgstr ""
+
+#: Controller/CategoriesController.php:30
+msgid "Catégorie a bien été mis à jour"
+msgstr ""
+
+#: Controller/CategoriesController.php:33
+msgid "Catégorie n'a pas bien été mis à jour"
+msgstr ""
+
+#: Controller/CategoriesController.php:48
+msgid "Categorie de n°%s a bien été supprimé"
+msgstr ""
+
+#: Controller/CategoriesController.php:54
+msgid "Categorie de n°%s n'a pas été supprimé !"
+msgstr ""
+
+#: Controller/PostsController.php:69
+msgid "Imossible de trouver l'article \"%s\""
+msgstr ""
+
+#: Controller/PostsController.php:122
+msgid "L'article a bien été enregistré"
+msgstr ""
+
+#: Controller/PostsController.php:138
+msgid "L'article n'a pas bien été enregistré !"
+msgstr ""
+
+#: Controller/PostsController.php:174
+msgid "L'Article a bien été supprimé"
+msgstr ""
+
+#: Controller/PostsController.php:179
+msgid "L'Article n'a pas bien été supprimé"
+msgstr ""
+
+#: Controller/UsersController.php:25
+msgid "L'utilisateur a bien été enregistré."
+msgstr ""
+
+#: Controller/UsersController.php:29
+msgid "L'utilisateur n'a pas été enregistré."
+msgstr ""
+
+#: Controller/UsersController.php:42
+msgid "L'utilisateur n'existe pas !"
+msgstr ""
+
+#: Controller/UsersController.php:45
+msgid "L'utilisateur a été supprimé"
+msgstr ""
+
+#: Controller/UsersController.php:48
+msgid "L'utilisateur n'a pas été supprimé"
+msgstr ""
+
+#: Controller/UsersController.php:60
+msgid "Configuration a bien été mise à jour"
+msgstr ""
+
+#: Controller/UsersController.php:73
+msgid "Identifiant et/ou mot de passe invalide !"
+msgstr ""
+
+#: View/Categories/admin_edit.ctp:1
+msgid "Editer une catégorie"
+msgstr ""
+
+#: View/Categories/admin_edit.ctp:5
+#: View/Posts/admin_edit.ctp:5
+#: View/Users/admin_edit.ctp:7
+msgid "Retour"
+msgstr ""
+
+#: View/Categories/admin_edit.ctp:13
+msgid "Titre de la catégorie"
+msgstr ""
+
+#: View/Categories/admin_edit.ctp:21
+#: View/Categories/admin_index.ctp:15
+#: View/Posts/admin_edit.ctp:25
+msgid "Slug"
+msgstr ""
+
+#: View/Categories/admin_edit.ctp:29
+#: View/Posts/admin_edit.ctp:85
+#: View/Users/admin_edit.ctp:42
+#: View/Users/admin_home.ctp:37
+msgid "Enregistrer"
+msgstr ""
+
+#: View/Categories/admin_index.ctp:4
+#: View/Posts/admin_index.ctp:6
+#: View/Users/admin_index.ctp:6
+msgid "Nouveau"
+msgstr ""
+
+#: View/Categories/admin_index.ctp:14
+#: View/Posts/admin_edit.ctp:17
+#: View/Posts/admin_index.ctp:17
+msgid "Titre"
+msgstr ""
+
+#: View/Categories/admin_index.ctp:16;25
+#: View/Comments/admin_index.ctp:12
+#: View/Posts/admin_index.ctp:22;34
+#: View/Users/admin_index.ctp:20;30
+msgid "Action"
+msgstr ""
+
+#: View/Categories/admin_index.ctp:27
+#: View/Posts/admin_index.ctp:36
+#: View/Users/admin_index.ctp:32
+msgid "Modifier"
+msgstr ""
+
+#: View/Categories/admin_index.ctp:30
+#: View/Posts/admin_index.ctp:39
+#: View/Users/admin_index.ctp:35
+msgid "Supprimer"
+msgstr ""
+
+#: View/Categories/admin_index.ctp:32
+#: View/Users/admin_index.ctp:37
+msgid "Etes-vous sur ?"
+msgstr ""
+
+#: View/Comments/admin_index.ctp:1
+#: View/Layouts/admin.ctp:29
+#: View/Posts/index.ctp:28
+#: View/Posts/view.ctp:16;33
+msgid "Commentaires"
+msgstr ""
+
+#: View/Comments/admin_index.ctp:7
+msgid "Nom & email"
+msgstr ""
+
+#: View/Comments/admin_index.ctp:8
+#: View/Posts/view.ctp:70
+msgid "Commentaire"
+msgstr ""
+
+#: View/Comments/admin_index.ctp:9
+msgid "Date"
+msgstr ""
+
+#: View/Comments/admin_index.ctp:10
+msgid "Status"
+msgstr ""
+
+#: View/Comments/admin_index.ctp:11
+msgid "Post"
+msgstr ""
+
+#: View/Comments/admin_index.ctp:21
+msgid "Validé"
+msgstr ""
+
+#: View/Comments/admin_index.ctp:23
+msgid "Non validé"
+msgstr ""
+
+#: View/Contact/index.ctp:6
+msgid "Contactez-nous"
+msgstr ""
+
+#: View/Contact/index.ctp:55
+#: View/Posts/view.ctp:77
+msgid "Envoyer"
+msgstr ""
+
+#: View/Elements/categoriesWidget.ctp:2
+msgid "Catégories"
+msgstr ""
+
+#: View/Elements/error.ctp:1
+msgid "Problème"
+msgstr ""
+
+#: View/Elements/postsWidget.ctp:2
+msgid "Derniers articles"
+msgstr ""
+
+#: View/Elements/searchAlert.ctp:4
+msgid "Mots clés"
+msgstr ""
+
+#: View/Elements/success.ctp:1
+#: View/Layouts/admin.ctp:43
+msgid "Bravo"
+msgstr ""
+
+#: View/Layouts/admin.ctp:26
+#: View/Posts/admin_index.ctp:1
+msgid "Articles"
+msgstr ""
+
+#: View/Layouts/admin.ctp:27
+#: View/Users/admin_index.ctp:1
+msgid "Utilisateurs"
+msgstr ""
+
+#: View/Layouts/admin.ctp:28
+msgid "Categories"
+msgstr ""
+
+#: View/Layouts/admin.ctp:32
+msgid "Voir le blog"
+msgstr ""
+
+#: View/Layouts/admin.ctp:33
+msgid "Déconnexion"
+msgstr ""
+
+#: View/Layouts/admin.ctp:42
+msgid "Chargement..."
+msgstr ""
+
+#: View/Layouts/admin.ctp:43
+msgid "l'action a bien été terminé"
+msgstr ""
+
+#: View/Layouts/default.ctp:49
+msgid "Rechercher"
+msgstr ""
+
+#: View/Layouts/default.ctp:52
+msgid "Contact"
+msgstr ""
+
+#: View/Layouts/default.ctp:57
+#: View/Users/login.ctp:2
+msgid "Connexion"
+msgstr ""
+
+#: View/Layouts/default.ctp:81
+msgid "Nous-contacter"
+msgstr ""
+
+#: View/Posts/admin_edit.ctp:1
+msgid "Ajouter un Article"
+msgstr ""
+
+#: View/Posts/admin_edit.ctp:36
+#: View/Posts/admin_index.ctp:19
+#: View/Posts/index.ctp:20
+#: View/Posts/view.ctp:9
+msgid "Auteur"
+msgstr ""
+
+#: View/Posts/admin_edit.ctp:45
+msgid "Categorie "
+msgstr ""
+
+#: View/Posts/admin_edit.ctp:56
+msgid "Tags"
+msgstr ""
+
+#: View/Posts/admin_edit.ctp:64
+msgid "Tags définis"
+msgstr ""
+
+#: View/Posts/admin_edit.ctp:75
+msgid "Texte"
+msgstr ""
+
+#: View/Posts/admin_index.ctp:18
+#: View/Posts/index.ctp:24
+#: View/Posts/view.ctp:13
+msgid "Catégorie"
+msgstr ""
+
+#: View/Posts/admin_index.ctp:20
+#: View/Users/admin_index.ctp:19
+msgid "Date création"
+msgstr ""
+
+#: View/Posts/admin_index.ctp:21
+msgid "Date mise à jour"
+msgstr ""
+
+#: View/Posts/index.ctp:1
+msgid "Accueil"
+msgstr ""
+
+#: View/Posts/index.ctp:6
+msgid "Un blog simple avec"
+msgstr ""
+
+#: View/Posts/index.ctp:26
+#: View/Posts/view.ctp:15
+msgid "Date/Heure"
+msgstr ""
+
+#: View/Posts/index.ctp:29
+#: View/Posts/view.ctp:16
+msgid "Commentaire(s)"
+msgstr ""
+
+#: View/Posts/index.ctp:37
+msgid "Lire"
+msgstr ""
+
+#: View/Posts/index.ctp:48
+msgid "Précédent"
+msgstr ""
+
+#: View/Posts/index.ctp:50
+msgid "Suivant"
+msgstr ""
+
+#: View/Posts/view.ctp:35
+msgid "Il n'y a aucun commentaire pour le moment !"
+msgstr ""
+
+#: View/Posts/view.ctp:55
+msgid "Votre commentaire"
+msgstr ""
+
+#: View/Posts/view.ctp:58
+msgid "Nom"
+msgstr ""
+
+#: View/Posts/view.ctp:64
+msgid "Email"
+msgstr ""
+
+#: View/Users/admin_edit.ctp:2
+msgid "Ajouter un utilisateur"
+msgstr ""
+
+#: View/Users/admin_edit.ctp:29
+#: View/Users/admin_index.ctp:17
+#: View/Users/login.ctp:12
+msgid "Login"
+msgstr ""
+
+#: View/Users/admin_edit.ctp:33
+#: View/Users/login.ctp:16
+msgid "Mot de passe"
+msgstr ""
+
+#: View/Users/admin_edit.ctp:37
+#: View/Users/admin_index.ctp:18
+msgid "Role"
+msgstr ""
+
+#: View/Users/admin_home.ctp:1
+msgid "Bonjour"
+msgstr ""
+
+#: View/Users/admin_home.ctp:3
+msgid "Configuration génerale"
+msgstr ""
+
+#: View/Users/login.ctp:20
+msgid "Se connecter"
+msgstr ""
+
+#: Model/Author.php:validation for field fullname
+#: Model/Category.php:validation for field title
+msgid "Champs est obligatoire"
+msgstr ""
+
+#: Model/Author.php:validation for field login;validation for field password
+msgid "%d caractéres au min"
+msgstr ""
+
+#: Model/Category.php:validation for field slug
+msgid "Slug déja existé !"
+msgstr ""
+
+#: Model/Category.php:validation for field slug
+msgid "Slug n'est pas valide"
+msgstr ""
+
+#: Model/Comment.php:validation for field fullname
+msgid "Saississez votre nom SVP"
+msgstr ""
+
+#: Model/Comment.php:validation for field email
+#: Model/Contact.php:validation for field email
+msgid "Adresse email n'est pas valide"
+msgstr ""
+
+#: Model/Comment.php:validation for field content
+msgid "Votre commentaire est trés courte !"
+msgstr ""
+
+#: Model/Contact.php:validation for field name
+msgid "Veuillez renseigner votre nom"
+msgstr ""
+
+#: Model/Contact.php:validation for field message
+msgid "Veuillez renseigner votre message"
+msgstr ""
+
+#: Model/Post.php:validation for field title;validation for field author_id;validation for field category_id;validation for field content
+msgid "champs obligatoire"
+msgstr ""
+
+#: Model/User.php:validation for field username
+msgid "Username obligatoire"
+msgstr ""
+
+#: Model/User.php:validation for field username
+msgid "Ce Username déja existé !"
+msgstr ""
+
+#: Model/User.php:validation for field password
+msgid "Mot de psse obligatoire"
+msgstr ""
+
+#: Model/User.php:validation for field role
+msgid "Choississez un role valide"
+msgstr ""
+
+#: Plugin/Markdown/View/Errors/missing_markdown.ctp:1
+msgid "Missing Markdown"
+msgstr ""
+
+#: Plugin/Markdown/View/Errors/missing_markdown.ctp:3;7
+#: View/Errors/error400.ctp:21
+#: View/Errors/error500.ctp:21
+msgid "Error"
+msgstr ""
+
+#: Plugin/Markdown/View/Errors/missing_markdown.ctp:4
+msgid "The markdown for %1$s%2$s was not found."
+msgstr ""
+
+#: Plugin/Markdown/View/Errors/missing_markdown.ctp:8
+msgid "Confirm you have created the file: %s"
+msgstr ""
+
+#: Plugin/Markdown/View/Errors/missing_markdown.ctp:11
+msgid "Notice"
+msgstr ""
+
+#: Plugin/Markdown/View/Errors/missing_markdown.ctp:12
+msgid "If you want to customize this error message, create %s"
+msgstr ""
+
+#: View/Layouts/error.ctp:19
+msgid "CakePHP: the rapid development php framework"
+msgstr ""
+
+#: webroot/test.php:87
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+
+#: View/Errors/error400.ctp:23
+msgid "The requested address %s was not found on this server."
+msgstr ""
+
+#: View/Errors/error500.ctp:22
+msgid "An Internal Error Has Occurred."
+msgstr ""
+

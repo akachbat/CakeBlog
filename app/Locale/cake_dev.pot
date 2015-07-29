@@ -1,0 +1,48 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-07-28 15:34+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Plugin/Markdown/View/Errors/missing_markdown.ctp:1
+msgid "Missing Markdown"
+msgstr ""
+
+#: Plugin/Markdown/View/Errors/missing_markdown.ctp:3;7
+msgid "Error"
+msgstr ""
+
+#: Plugin/Markdown/View/Errors/missing_markdown.ctp:4
+msgid "The markdown for %1$s%2$s was not found."
+msgstr ""
+
+#: Plugin/Markdown/View/Errors/missing_markdown.ctp:8
+msgid "Confirm you have created the file: %s"
+msgstr ""
+
+#: Plugin/Markdown/View/Errors/missing_markdown.ctp:11
+msgid "Notice"
+msgstr ""
+
+#: Plugin/Markdown/View/Errors/missing_markdown.ctp:12
+msgid "If you want to customize this error message, create %s"
+msgstr ""
+
+#: View/Layouts/error.ctp:19
+msgid "CakePHP: the rapid development php framework"
+msgstr ""
+
+#: webroot/test.php:87
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+
