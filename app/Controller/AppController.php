@@ -53,7 +53,10 @@ class AppController extends Controller {
     );
 
     public function beforeFilter(){
-            /*debug($this->Session->check('Auth'));*/
+        //récuperer blog language
+        $this->loadModel('Setting');
+        Configure::write('Config.language', $this->Setting->getSetting('blog_language'));
+        
         if(isset($this->request->params['prefix']) && $this->request->params['prefix'] == 'admin'){
             $this->layout = 'admin';   
         }else{

@@ -1,5 +1,5 @@
 <div class="col-xs-6 col-xs-offset-3">
-    <h2>Connexion</h2>
+    <h2><?= __('Connexion') ?></h2>
     <?= $this->Form->create('User', array(
             'inputDefaults' => array(
                 'div' => array('class' => 'form-group'),
@@ -9,15 +9,15 @@
     ?>
     <?= $this->Session->flash(); ?>
     <?= $this->Form->input('username', array(
-            'label' => 'Username'
+            'label' => __('Login')
         ));
     ?>
     <?= $this->Form->input('password', array(
-            'label' => 'Password'
+            'label' => __('Mot de passe')
         )); 
     ?>
     <?= $this->Form->end(array(
-        'label' => 'se connecter',
+        'label' => __('Se connecter'),
         'class' => 'btn btn-primary'
         ));
     ?>

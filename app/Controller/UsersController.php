@@ -53,6 +53,16 @@ class UsersController extends AppController {
     public function admin_home(){
         //Admin Index
         $this->set('username', $this->Auth->user('username'));
+        $this->loadModel('Setting');
+        if($this->request->is('post')){
+            $this->Setting->setSetting('blog_language',$this->data['setting']['blog_language']);
+            $this->Setting->setSetting('blog_contact',$this->data['setting']['blog_contact']);
+            $this->Session->setFlash(__('Configuration a bien été mise à jour'),'success');
+            return $this->redirect($this->referer());
+        }
+        //récupérer les infos de configuration
+        $this->request->data['setting']['blog_language'] = $this->Setting->getSetting('blog_language');
+        $this->request->data['setting']['blog_contact'] = $this->Setting->getSetting('blog_contact');
     }
 
     public function login() {

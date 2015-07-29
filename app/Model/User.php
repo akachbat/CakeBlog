@@ -12,7 +12,7 @@ class User extends AppModel {
         'username' => array(
             'required' => array(
                 'rule' => array('notEmpty'),
-                'message' => '"Username" obligatoire'
+                'message' => 'Username obligatoire'
             ),
             'unicity' => array(
                 'rule' => 'isUnique',

@@ -19,7 +19,7 @@ class CategoriesController extends AppController
 		if(!empty($id)){
 			$cat = $this->Category->findById($id);
 			if(!$cat)
-				throw new NotFoundException("Catégorie n'existe pas !");
+				throw new NotFoundException(__("Catégorie n'existe pas !"));
 		}
 
 		if($this->request->is(array('post', 'put'))){

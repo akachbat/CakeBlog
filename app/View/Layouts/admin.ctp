@@ -23,13 +23,14 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">	
 					<ul class="nav navbar-nav">
-						<li><?= $this->Html->link('Articles', array('controller' => 'posts', 'action' => 'index', 'admin' => true)) ?></li>
-						<li><?= $this->Html->link('Utilisateurs', array('controller' => 'users', 'action' => 'index', 'admin' => true)) ?></li>
-						<li><?= $this->Html->link('Categories', array('controller' => 'categories', 'action' => 'index', 'admin' => true)) ?></li>					
-						<li><?= $this->Html->link('Commentaires', array('controller' => 'comments', 'action' => 'index', 'admin' => true)) ?></li>					
+						<li><?= $this->Html->link(__('Articles'), array('controller' => 'posts', 'action' => 'index', 'admin' => true)) ?></li>
+						<li><?= $this->Html->link(__('Utilisateurs'), array('controller' => 'users', 'action' => 'index', 'admin' => true)) ?></li>
+						<li><?= $this->Html->link(__('Categories'), array('controller' => 'categories', 'action' => 'index', 'admin' => true)) ?></li>					
+						<li><?= $this->Html->link(__('Commentaires'), array('controller' => 'comments', 'action' => 'index', 'admin' => true)) ?></li>					
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li><?= $this->Html->Link('Déconnexion', array('controller' => 'users', 'action' => 'logout', 'admin' => true)) ?></li>				
+						<li><?= $this->Html->Link(__('Voir le blog'),array('controller' => '/', 'action' => '/','admin' => false)) ?></li>
+						<li><?= $this->Html->Link(__('Déconnexion'), array('controller' => 'users', 'action' => 'logout', 'admin' => true)) ?></li>				
 					</ul>
 				</div>
 			</div>
@@ -38,8 +39,8 @@
 		<div class="container" id="content">
 			<div class="col-xs-12">
 				<?= $this->Session->flash(); ?>
-				<div class="alert alert-warning alert-ajax-start"><b>Chargement...</b></div>
-				<div class="alert alert-success alert-ajax-success"><b>Bravo</b> l'action a bien été terminé</div>
+				<div class="alert alert-warning alert-ajax-start"><b><?= __('Chargement...') ?></b></div>
+				<div class="alert alert-success alert-ajax-success"><b><?= __('Bravo') ?></b> <?= __('l\'action a bien été terminé') ?></div>
 				<?= $this->fetch('content'); ?>
 			
 			</div>		

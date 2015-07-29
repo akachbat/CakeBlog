@@ -1,5 +1,5 @@
 <div class="panel panel-primary">
-	<div class="panel-heading">Derniers articles</div>
+	<div class="panel-heading"><?= __('Derniers articles') ?></div>
 	<?php 
 		$posts = $this->requestAction(array('controller' => 'posts','action' => 'widget','element' => 'posts')) 
 	?>

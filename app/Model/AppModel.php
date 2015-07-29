@@ -33,4 +33,9 @@ App::uses('Model', 'Model');
 class AppModel extends Model {
 	public $recursive = -1;
 	public $actAs = array('Containable');
+
+	public function afterSave($created, $options = array()){
+		//nettoyer le cache
+		Cache::clear();
+	}		
 }

@@ -46,15 +46,15 @@
 				        <div class="form-group">
 			          		<input type="text" name="search" class="form-control" placeholder="PHP, Cake,...">
 				        </div>
-			        	<button type="submit" class="btn btn-danger">Rechercher</button>
+			        	<button type="submit" class="btn btn-danger"><?= __('Rechercher') ?></button>
 			      	</form>			
 					<ul class="nav navbar-nav">
-						<li><a href="<?= Router::url(array('controller' => 'contact')) ?>"><span class="glyphicon glyphicon-send"></span> Contact</a></li>
+						<li><a href="<?= Router::url(array('controller' => 'contact')) ?>"><span class="glyphicon glyphicon-send"></span> <?= __('Contact') ?></a></li>
 						<li><a href="<?= Router::url(array('controller' => 'users', 'admin' => true)) ?>"><span class="glyphicon glyphicon-user"></span> 
 							<?php if($this->Session->read('Auth.User')): ?>
 								<?= $this->Session->read('Auth.User.username') ?>
 							<?php else: ?>
-								Connexion
+								<?= __('Connexion') ?>
 							<?php endif; ?>
 							</a>
 						</li>
@@ -67,15 +67,18 @@
 			<?php echo $this->fetch('content'); ?>
 		</div>
 
-		<?php echo $this->element('sql_dump'); ?>
+		<div class="container">
+			<?php echo $this->element('sql_dump'); ?>
+			<br><br>
+		</div>
 
 	</div>
 
 	<footer class="navbar-inverse container-fluid">
 		<div>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">CakeBlog <?= date('Y') ?></a></li>
-				<li><a href="#">Nous-contacter</a></li>
+				<li><a href="<?= Router::url(array('controller' => '/')) ?>">CakeBlog <?= date('Y') ?></a></li>
+				<li><a href="<?= Router::url(array('controller' => 'contact')) ?>"><?= __('Nous-contacter') ?></a></li>
 			</ul>
 		</div>
 	</footer>

@@ -1,1 +1,1 @@
-<div class="alert alert-danger"><strong>Problème !</strong> <?= $message; ?></div>
+<div class="alert alert-danger"><strong><?= __('Problème') ?> !</strong> <?= $message; ?></div>

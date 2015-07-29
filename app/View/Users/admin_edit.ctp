@@ -1,10 +1,10 @@
 <div class="row">
-    <h2>Ajouter un utilisateur</h2>
+    <h2><?= __('Ajouter un utilisateur') ?></h2>
 
     <div class="col-xs-6">
         <div class="form-group">
             <p class="text-right">
-                <?= $this->Html->Link('Retour',
+                <?= $this->Html->Link(__('Retour'),
                     array('action' => 'index'),
                     array('class' => 'btn btn-danger')) 
                 ?>      
@@ -26,20 +26,20 @@
             )); 
         ?>
         <?= $this->Form->input('username', array(
-        		'label' => 'Username'
+        		'label' => __('Login')
         	));
         ?>
         <?= $this->Form->input('password', array(
-        		'label' => 'Password'
+        		'label' => __('Mot de passe')
         	)); 
         ?>
      	<?=  $this->Form->input('role', array(
-         		'label' => 'Role',
+         		'label' => __('Role'),
                 'options' => array('admin' => 'Admin', 'user' => 'User')
             ));
     	?>
         <?= $this->Form->end(array(
-            'label' => 'Enregistrer',
+            'label' => __('Enregistrer'),
             'class' => 'btn btn-primary'
             ));
         ?>    

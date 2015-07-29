@@ -1,5 +1,5 @@
 html,body{
-	height: 100%;
+	height: 100% !important;
 }
 .navbar{
 	border-radius: 0;
@@ -7,10 +7,14 @@ html,body{
 
 #wrap{
 	min-height: 100%;
-	margin-bottom: -50px;
+	margin-bottom: 0px;
 }
 
 .alert-ajax-start,
 .alert-ajax-success{
 	display: none;
+}
+
+footer{
+	margin-top: -50px;
 }

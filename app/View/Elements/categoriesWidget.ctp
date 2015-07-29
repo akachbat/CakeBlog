@@ -1,5 +1,5 @@
 <div class="panel panel-primary">
-	<div class="panel-heading">Catégories</div>
+	<div class="panel-heading"><?= __('Catégories') ?></div>
 	<?php 
 		$cats = $this->requestAction(array('controller' => 'posts','action' => 'widget','element' => 'categories')) 
 	?>

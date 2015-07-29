@@ -6,14 +6,14 @@
 
 		<ul class="list-inline text-left">
 			<li>
-				<i class="glyphicon glyphicon-user" title="vues"></i> 
+				<i class="glyphicon glyphicon-user" title="<?= __('Auteur') ?>"></i> 
 				<?= $this->Html->Link($post['User']['username'],array('controller' => 'author', 'action' => $post['User']['id']),array('class' => 'text text-primary')) ?>
 			</li>
 			<li>
-				<i class="glyphicon glyphicon-tag" title="vues"></i>
+				<i class="glyphicon glyphicon-tag" title="<?= __('Catégorie') ?>"></i>
 				<?= $this->Html->Link($post['Category']['title'],array('controller' => 'category', 'action' => $post['Category']['slug']),array('class' => 'text text-primary')) ?>						
-			<li><i class="glyphicon glyphicon-time" title="vues"></i> <?= $this->Time->nice($post['Post']['created']) ?></li>
-			<li><i class="glyphicon glyphicon-comment" title="vues"></i> <?= count($post['Comment']) ?> <a href="#comments">Commentaire(s)</a></li>
+			<li><i class="glyphicon glyphicon-time" title="<?= __('Date/Heure') ?>"></i> <?= $this->Time->nice($post['Post']['created']) ?></li>
+			<li><i class="glyphicon glyphicon-comment" title="<?= __('Commentaires') ?>"></i> <?= count($post['Comment']) ?> <a href="#comments"><?= __('Commentaire(s)') ?></a></li>
 		</ul>
 
 		<div class="">
@@ -30,9 +30,9 @@
 		</div>
 
 		<div id="comments" class="">
-			<h3 class="text-primary">Commentaires</h3><br/>	
+			<h3 class="text-primary"><?= __('Commentaires') ?></h3><br/>	
 			<?php if(empty($post['Comment'])): ?>
-				<div class="alert alert-warning"><span>Il n'y a aucun commentaire pour le moment !</span></div>
+				<div class="alert alert-warning"><span><?= __('Il n\'y a aucun commentaire pour le moment !') ?></span></div>
 			<?php endif; ?>
 
 			<?php foreach ($post['Comment'] as $comment): ?>
@@ -52,29 +52,29 @@
 			
 			<br>
 			<?= $this->Session->flash(); ?>
-			<h3 class="text-primary">Votre commentaire</h3><br>
+			<h3 class="text-primary"><?= __('Votre commentaire') ?></h3><br>
 			<?= $this->Form->create('Comment') ?>
 			<?= $this->Form->input('fullname',array(
-					'label' => 'Nom ',
+					'label' => __('Nom'),
 					'class' => 'form-control',
 					'div' => array('class' => 'form-group')				
 				));
 			?>	
 			<?= $this->Form->input('email',array(
-					'label' => 'Email ',
+					'label' => __('Email'),
 					'class' => 'form-control',
 					'div' => array('class' => 'form-group')				
 				));
 			?>	
 			<?= $this->Form->input('content',array(
-					'label' => 'Commentaire',
+					'label' => __('Commentaire'),
 					'type' => 'textarea',
 					'class' => 'form-control',
 					'div' => array('class' => 'form-group')				
 				));
 			?>					
 			<?= $this->Form->end(array(
-					'label' => 'Envoyer',
+					'label' => __('Envoyer'),
 					'class' => 'btn btn-primary'
 				));
 			?>

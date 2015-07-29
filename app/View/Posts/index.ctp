@@ -1,9 +1,9 @@
-<?php $this->set('title_for_layout','Accueil') ?>
+<?php $this->set('title_for_layout',__('Accueil')) ?>
 
 <div class="row">
 	<div class="jumbotron text-center bg-white">
         <h1>CakeBlog</h1>
-        <p class="lead">Un blog simple avec <b>CakePHP 2.X</b></p>
+        <p class="lead"><?= __('Un blog simple avec') ?> <b>CakePHP 2.X</b></p>
   	</div>	
 </div>
 
@@ -17,16 +17,16 @@
 				<h2><?= $post['Post']['title'] ?></h2>
 				<ul class="list-inline text-left">
 					<li>
-						<i class="glyphicon glyphicon-user" title="vues"></i> 
+						<i class="glyphicon glyphicon-user" title="<?= __('Auteur') ?>"></i> 
 						<?= $this->Html->Link($post['User']['username'],array('controller' => 'author', 'action' => $post['User']['id']),array('class' => 'text text-primary')) ?>
 					</li>
 					<li>
-						<i class="glyphicon glyphicon-tag" title="vues"></i>
+						<i class="glyphicon glyphicon-tag" title="<?= __('Catégorie') ?>"></i>
 						<?= $this->Html->Link($post['Category']['title'],array('controller' => 'category', 'action' => $post['Category']['slug']),array('class' => 'text text-primary')) ?>						
-					<li><i class="glyphicon glyphicon-time" title="vues"></i> <?= $this->Time->nice($post['Post']['created']) ?></li>
+					<li><i class="glyphicon glyphicon-time" title="<?= __('Date/Heure') ?>"></i> <?= $this->Time->nice($post['Post']['created']) ?></li>
 					<li>
-						<i class="glyphicon glyphicon-comment" title="vues"></i> <?= count($post['Comment']) ?> 
-						<?= $this->Html->Link('Commentaire(s)',array('controller' => '/','action' => $post['Post']['slug'],null,
+						<i class="glyphicon glyphicon-comment" title="<?= __('Commentaires') ?>"></i> <?= count($post['Comment']) ?> 
+						<?= $this->Html->Link(__('Commentaire(s)'),array('controller' => '/','action' => $post['Post']['slug'],null,
 							'#' => 'comments')) ?>
 						</li>
 				</ul>
@@ -34,7 +34,7 @@
 				<p><?= $this->Markdown->transform($this->Text->truncate($post['Post']['content'],500)) ?></p>
 
 				<ul class="list-inline text-right">
-					<li><?= $this->Html->Link('Lire',
+					<li><?= $this->Html->Link(__('Lire'),
 							array('controller' => '/','action' => $post['Post']['slug']),
 							array('class' => 'btn btn-primary')) 
 						?>

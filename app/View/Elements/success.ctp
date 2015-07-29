@@ -1,1 +1,1 @@
-<div class="alert alert-success"><strong>Bravo !</strong> <?= $message; ?></div>
+<div class="alert alert-success"><strong><?= __('Bravo') ?> !</strong> <?= $message; ?></div>
